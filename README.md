@@ -2,7 +2,7 @@
 
 # Problem Statement:
 
--Create an alarm clock. Use ONLY vanilla javascript, no libraries or frameworks allowed for Javascript (you can use any css framework like Bootstrap).
+Create an alarm clock. Use ONLY vanilla javascript, no libraries or frameworks allowed for Javascript (you can use any css framework like Bootstrap).
 
 # Alarm-Clock using Vanilla JavaScript
 
@@ -14,7 +14,7 @@
 
 Clock face:
 
-  -Clock showing the current time (seconds,mins,hrs should change as time changes)
+  - Clock showing the current time (seconds,mins,hrs should change as time changes)
 
 Set Alarm:
 
