@@ -7,12 +7,10 @@ Create an alarm clock. Use ONLY vanilla javascript, no libraries or frameworks a
 # Alarm-Clock using Vanilla JavaScript
 
 - This is a repository for Alarm Clock Developed using Vanilla JavaScript, HTML, CSS.
-- It is developed to create a soothing Experience with powerful features and clean interface.
-
 
 # Features Required
 
-Clock face:
+Clock:
 
   - Clock showing the current time (seconds,mins,hrs should change as time changes)
 
