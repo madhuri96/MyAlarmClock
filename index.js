@@ -1,3 +1,4 @@
+// vairiables of alarms
 const currentTime = document.querySelector("#current-time");
 const setHours = document.querySelector("#hours");
 const setMinutes = document.querySelector("#minutes");
@@ -32,7 +33,7 @@ function dropDownMenu(start, end, element) {
   }
 }
 
-
+// Clock showing the current time using getCurrentTime()
 function getCurrentTime() {
   let time = new Date();
   time = time.toLocaleTimeString("en-US", {
@@ -46,7 +47,7 @@ function getCurrentTime() {
   return time;
 }
 
-
+// get Input hr,min,sec,am or pm 
 function getInput(e) {
   e.preventDefault();
   const hourValue = setHours.value;
@@ -60,7 +61,7 @@ function getInput(e) {
     secondValue,
     amPmValue
   );
-  setAlarm(alarmTime);
+  setAlarm(alarmTime);   //set alram in perticular alarm time that is given input to getInput()
 }
 
 // Converting time to 24 hour format
@@ -68,7 +69,7 @@ function convertToTime(hour, minute, second, amPm) {
   return `${parseInt(hour)}:${minute}:${second} ${amPm}`;
 }
 
-
+// save alarms
 function setAlarm(time, fetching = false) {
   const alarm = setInterval(() => {
     if (time === getCurrentTime()) {
@@ -123,7 +124,7 @@ function fetchAlarm() {
   });
 }
 
-
+// delete alarms in alarm container 
 function deleteAlarm(event, time, intervalId) {
   const self = event.target;
 
@@ -141,5 +142,5 @@ function deleteAlarmFromLocal(time) {
 
   const index = alarms.indexOf(time);
   alarms.splice(index, 1);
-  localStorage.setItem("alarms", JSON.stringify(alarms));
+  localStorage.setItem("alarms", JSON.stringify(alarms));  //converts a JavaScript value to a JSON string
 }
